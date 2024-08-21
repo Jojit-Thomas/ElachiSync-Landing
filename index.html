@@ -3,81 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elachi Sync</title>
-    <meta
-      name="description"
-      content="Where Tradition Meets Technology for Premium Cardamom Production"
-    />    
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link href="./output.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNC84TE4VG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <title>ElachiSync (Coming Soon)</title>
+    <link href="./build.css" rel="stylesheet" />
 
-        gtag('config', 'G-WNC84TE4VG');
-    </script>
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "mnrc4vgyzy");
-    </script>
+    <!-- Meta Tags -->
+    <meta name="description" content="ElachiSync - Coming Soon. Stay tuned for premium cardamom and spice offerings from the heart of Idukki." />
+    <meta name="keywords" content="ElachiSync, Cardamom, Spices, Coming Soon, ElachiSync" />
+    <meta name="author" content="Jojit Thomas" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="ElachiSync (Coming Soon)" />
+    <meta property="og:description" content="ElachiSync - Coming Soon. Stay tuned for premium cardamom and spice offerings from the heart of Idukki." />
+    <meta property="og:image" content="https://elachisync.com/hero.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Tags (optional) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ElachiSync (Coming Soon)" />
+    <meta name="twitter:description" content="ElachiSync - Coming Soon. Stay tuned for premium cardamom and spice offerings from the heart of Idukki." />
+    <meta name="twitter:image" content="https://elachisync.com/hero.jpg" />
   </head>
-  <body>
-    <div class="h-screen flex flex-col">
-      <!-- Hero Section -->
-      <section class="bg-green-400 text-white py-20">
-        <div class="container mx-auto text-center">
-          <h1 class="text-4xl font-bold mb-4">Empowering Cardamom Farming</h1>
-          <p class="text-lg mb-8">
-            Maximize yields, streamline operations, and gain insights with ElachiSync.
-          </p>
-          <a
-            href="https://admin.elachisync.com/"
-            class="bg-white text-green-500 hover:bg-green-300 rounded-full py-3 px-6 font-semibold uppercase"
-          >
-            Get Started
-          </a>
-        </div>
-      </section>
 
-      <!-- Features Section -->
-      <section class="container mx-auto mt-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Feature 1 -->
-          <div class="bg-white p-8 rounded-lg shadow-md text-center">
-            <h2 class="text-xl font-semibold mb-4">Analytics Dashboard</h2>
-            <p class="text-gray-600">
-              Access detailed analytics to optimize farming strategies and track production trends.
-            </p>
-          </div>
-          <!-- Feature 2 -->
-          <div class="bg-white p-8 rounded-lg shadow-md text-center">
-            <h2 class="text-xl font-semibold mb-4">Inventory Management</h2>
-            <p class="text-gray-600">
-              Effortlessly manage inventory, track stocks, and streamline order processing.
-            </p>
-          </div>
-          <!-- Feature 3 -->
-          <div class="bg-white p-8 rounded-lg shadow-md text-center">
-            <h2 class="text-xl font-semibold mb-4">Integrated Dryer Facilities</h2>
-            <p class="text-gray-600">
-              Connect with dryer facilities for efficient scheduling and quality control of drying
-              operations.
-            </p>
-          </div>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="text-center bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Coming Soon!</h1>
+      <p class="text-lg text-gray-600 mb-6">Our website is under construction. We'll be here soon with our new site. Stay tuned!</p>
+      <div class="bg-yellow-100 text-yellow-800 p-4 rounded-lg mb-6">
+        <p class="text-lg font-semibold">This domain is for sale!</p>
+        <p class="mt-2">If you're interested in purchasing it, please enter your WhatsApp number below.</p>
+      </div>
+      <form id="contact-form" class="space-y-4">
+        <input type="tel" id="phone" name="phone" placeholder="Enter your WhatsApp number" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required />
+        <button type="submit" class="w-full bg-yellow-500 text-white p-3 rounded-lg font-semibold hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500">Send Inquiry</button>
+      </form>
+      <div id="success-modal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-lg font-semibold">Success!</h2>
+          <p>Your inquiry has been sent successfully.</p>
+          <button onclick="document.getElementById('success-modal').classList.add('hidden');" class="mt-4 bg-yellow-500 text-white p-2 rounded-lg">Close</button>
         </div>
-      </section>
-      <!-- Footer -->
-      <footer class="bg-gray-900 text-white py-6 mt-auto">
-        <div class="container mx-auto text-center">
-          <p>&copy; 2024 ElachiSync. All rights reserved.</p>
+      </div>
+      <div id="error-modal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-lg font-semibold">Error!</h2>
+          <p>There was a problem sending your inquiry. Please try again.</p>
+          <button onclick="document.getElementById('error-modal').classList.add('hidden');" class="mt-4 bg-red-500 text-white p-2 rounded-lg">Close</button>
         </div>
-      </footer>
+      </div>
     </div>
+
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
